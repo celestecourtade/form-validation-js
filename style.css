@@ -1,0 +1,146 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-image: url('img.jpg'); 
+    background-size: cover;       
+    background-repeat: no-repeat;  
+    background-position: center;  
+    background-attachment: fixed;  
+    margin: 0;                    
+    min-height: 100vh;            
+  }
+  .title {
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;      
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+
+  }
+  
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 0.25rem;
+    text-shadow: 2px 2px 6px rgb(255, 255, 255);
+
+  }
+  
+/* Estilo general del formulario */
+form#registrationForm {
+    max-width: 35rem;
+    margin: 2.5rem auto;      
+    padding: 1.5rem 1.87rem; 
+    border: 0.2rem solid #9b9b9b;
+    border-radius: 0.5rem;    
+    background-color:#d99047;
+  }
+  
+  /* Título */
+  form#registrationForm h2 {
+    text-align: center;
+    margin-bottom: 1.25rem; 
+    color: #141414;
+  }
+  
+  /* Labels */
+  form#registrationForm label {
+    display: block;
+    margin-bottom: 0.37rem; 
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  /* Inputs y date */
+  form#registrationForm input[type="text"],
+  form#registrationForm input[type="password"],
+  form#registrationForm input[type="date"] {
+    width: 100%;
+    padding: 0.56rem 0.62rem;
+    margin-bottom: 1.12rem;   
+    border: 0.3rem solid #bbb; 
+    border-radius: 0.2rem;    
+    font-size: 0.93rem;       
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+
+  /* Inputs con error */
+form#registrationForm input.error {
+    border-color: red;
+    background-color: #ffe6e6;
+  }
+  
+  form#registrationForm input[type="text"]:focus,
+  form#registrationForm input[type="password"]:focus,
+  form#registrationForm input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Contenedor checkbox */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;   
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 0.625rem;   
+    width: 1.12rem;          
+    height: 1.12rem;         
+    cursor: pointer;
+  }
+  
+  .checkbox-container label {
+    margin: 0;
+    font-weight: normal;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  /* Mensaje de error */
+  #errorContainer.error {
+    color: #d93025;
+    background-color: #fce8e6;
+    padding: 0.625rem 0.75rem; 
+    border-radius: 0.25rem;   
+    margin-bottom: 1.25rem;    
+    font-weight: 600;
+    font-size: 0.875rem;       
+    display: none; 
+  }
+  
+  /* Mostrar error */
+  #errorContainer.error.show {
+    display: block;
+  }
+  
+  /* Botón */
+  form#registrationForm button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem 0;        
+    background-color: #7f2200;
+    border: none;
+    border-radius: 0.3125rem;  
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;          
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form#registrationForm button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
