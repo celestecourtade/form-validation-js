@@ -6,10 +6,25 @@
   <title>Registro de formulario</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script> <!-- ¡IMPORTANTE! -->
+  <script src="modal.js" defer></script>
+
 
 
 </head>
 <body>
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModalBtn">&times;</span>
+          <h2>¡Nivel desbloqueado!</h2>
+          <p>¿Querés continuar al siguiente desafío?</p>
+          <div class="modal-buttons">
+            <button id="confirmBtn">Confirmar</button>
+            <button id="cancelBtn">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      
+      <button id="openModalBtn">Abrir mensaje del juego</button>
 
     <section>
         <div class="title">
@@ -62,6 +77,6 @@
       
         <button type="submit">Register</button>
       </form>
-      
+    
 </body>
 </html>
